@@ -2,7 +2,12 @@
 
 A simplistic clean and minimal theme for rEFInd
 
-![Screenshot](http://orig13.deviantart.net/dd56/f/2016/078/f/e/refind_theme_by_munlik-d8gvwo8.jpg)
+
+![Screenshot 01](http://orig13.deviantart.net/dd56/f/2016/078/f/e/refind_theme_by_munlik-d8gvwo8.jpg)
+
+![Screenshot 02](http://i.imgur.com/INYOOf0.jpg)
+**press F10 to take screenshot
+
 
 ### Installation:
 
