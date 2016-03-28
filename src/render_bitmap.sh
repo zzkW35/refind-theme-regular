@@ -39,13 +39,13 @@ function render_bitmap(){
 
         if [ -f $OUT_DIR/os_unknown.png ]
             then
-                for f in os_clover os_grub os_gummiboot os_hwtest os_refit os_network
+                for f in os_clover os_gummiboot os_hwtest os_refit os_network
                     do
                         echo "Copying... $OUT_DIR/$f.png"
                         cp -f "$OUT_DIR/os_unknown.png" "$OUT_DIR/$f.png"
                 done
      	fi
-        
+
         if [ -f $OUT_DIR/tool_rescue.png ]
             then
                 for f in tool_apple_rescue tool_windows_rescue
