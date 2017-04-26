@@ -17,9 +17,9 @@ OUT_DIR=""
 REG=''
 
 function render_bitmap(){
-    for svgfile in $SRC_DIR/*.svg
+    for svgfile in $(ls $SRC_DIR | grep .svg)
         do
-            filename=`echo $svgfile | sed $REG`
+            filename=$(echo $svgfile | sed $REG)
             if [ -f "$OUT_DIR/$filename.png" ]
                 then
                     echo "'$OUT_DIR/$filename.png' already exists"
@@ -27,19 +27,19 @@ function render_bitmap(){
                     echo "Creating... $OUT_DIR/$filename.png"
                 	$INKSCAPE --export-area-page \
                               --export-dpi=$(($SCALE*$DPI)) \
-                              --export-png="$OUT_DIR/$filename.png" $svgfile> /dev/null \
+                              --export-png="$OUT_DIR/$filename.png" $SRC_DIR/$svgfile> /dev/null \
                     &&
                     if [[ -x $OPTIPNG ]]
-                        then            
+                        then
                             $OPTIPNG -o7 --quiet "$OUT_DIR/$filename.png"
                     fi
-                        
-            fi                         
+
+            fi
         done
 
         if [ -f $OUT_DIR/os_unknown.png ]
             then
-                for f in os_clover os_gummiboot os_hwtest os_refit os_network
+                for f in os_clover os_gummiboot os_hwtest os_refit os_network os_systemd-boot
                     do
                         echo "Copying... $OUT_DIR/$f.png"
                         cp -f "$OUT_DIR/os_unknown.png" "$OUT_DIR/$f.png"
@@ -53,7 +53,7 @@ function render_bitmap(){
                         echo "Copying... $OUT_DIR/$f.png"
                         cp -f "$OUT_DIR/tool_rescue.png" "$OUT_DIR/$f.png"
                 done
-                
+
         fi
 }
 function render_big_icon(){
@@ -78,4 +78,4 @@ for i in ${SCALE_PRESET[@]}
         render_big_icon
    	    render_small_icon
 done
-exit 0    	  
+exit 0
