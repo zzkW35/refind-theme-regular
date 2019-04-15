@@ -3,8 +3,10 @@
 A simplistic clean and minimal theme for rEFInd
 
 NOTE: this is a fork of munlik's theme since he seems to have abandoned his project, he didn't answer to (my) PRs on github for years.
+
 (default settings)
 ![Screenshot 01](http://i.imgur.com/wQQ5OiQ.png)
+
 (dark theme selected)
 ![Screenshot 02](http://i.imgur.com/yVL6Rdk.png)
 **press F10 to take screenshot**
