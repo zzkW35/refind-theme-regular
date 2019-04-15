@@ -5,10 +5,10 @@ A simplistic clean and minimal theme for rEFInd
 NOTE: this is a fork of munlik's theme since he seems to have abandoned his project, he didn't answer to (my) PRs on github for years.
 
 (default settings)
-![Screenshot 01](http://i.imgur.com/wQQ5OiQ.png)
+![Screenshot 01](https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/src/white_theme.png)
 
 (dark theme selected)
-![Screenshot 02](http://i.imgur.com/yVL6Rdk.png)
+![Screenshot 02](https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/src/dark_theme.png)
 **press F10 to take screenshot**
 
 ### Installation [Quick]:
