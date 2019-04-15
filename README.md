@@ -3,8 +3,9 @@
 A simplistic clean and minimal theme for rEFInd
 
 NOTE: this is a fork of munlik's theme since he seems to have abandoned his project, he didn't answer to (my) PRs on github for years.
-
+(default settings)
 ![Screenshot 01](http://i.imgur.com/wQQ5OiQ.png)
+(dark theme selected)
 ![Screenshot 02](http://i.imgur.com/yVL6Rdk.png)
 **press F10 to take screenshot**
 
@@ -14,7 +15,11 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
    ```
    bash <(curl -s https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/Install.sh)
    ```
-2. Well, that's it! xD
+2. To adjust icon size, font size, background color and selector color edit `theme.conf`.
+
+   ```
+   sudo nano /boot/efi/EFI/refind/refind-theme-regular/theme.conf
+   ```
 
 ### Installation [Manual]:
 
