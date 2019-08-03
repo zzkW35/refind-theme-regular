@@ -4,12 +4,15 @@ A simplistic clean and minimal theme for rEFInd
 
 NOTE: this is a fork of munlik's theme since he seems to have abandoned his project, he didn't answer to (my) PRs on github for years.
 
+ **press F10 to take screenshot**
+ 
 (default settings)
-![Screenshot 01](https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/src/white_theme.png)
+![Screenshot 01](https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/src/white_theme.png )
 
 (dark theme selected)
 ![Screenshot 02](https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/src/dark_theme.png)
-**press F10 to take screenshot**
+
+
 
 ### Installation [Quick]:
 
@@ -17,11 +20,7 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
    ```
    sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/install.sh)"
    ```
-2. To further adjust icon size, font size, background color and selector color edit `theme.conf`.
-
-   ```
-   sudo nano /boot/efi/EFI/refind/refind-theme-regular/theme.conf
-   ```
+2. To further adjust icon size, font size, background color and selector color edit `/boot/efi/EFI/refind/refind-theme-regular/theme.conf` as root/SuperUser.
 
 ### Installation [Manual]:
 
@@ -51,12 +50,12 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
 
 4. To adjust icon size, font size, background color and selector color edit `theme.conf`.
    ```
-   sudo nano /boot/efi/EFI/refind/refind-theme-regular/theme.conf
+   sudo vi /boot/efi/EFI/refind/refind-theme-regular/theme.conf
    ```
 
 5. To enable the theme add `include refind-theme-regular/theme.conf` at the end of `refind.conf`, and comment out or delete any other themes you might have installed.
    ```
-   sudo nano /boot/efi/EFI/refind/refind.conf
+   sudo vi /boot/efi/EFI/refind/refind.conf
 
    ```
 
